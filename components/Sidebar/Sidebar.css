@@ -1,0 +1,135 @@
+    .sidebar {
+        height: 100vh;
+        background-color: #1e1f20;
+        color: #E8EAED;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        height: auto;
+        max-height: 100vh;
+        overflow: hidden; 
+        transition: max-height 0.3s ease;
+    }
+
+    .sidebar .top {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sidebar .menu {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        color: #ffffff;
+        background-color: transparent;
+        border: none;
+        margin-left: 0.7vw;
+        transition: background-color 0.2s, border-radius 0.2s, padding 0.2s;
+    }
+
+    .sidebar .menu:hover {
+        background-color: #3C4043;
+        border-radius: 50%;
+        padding: 5px;
+    }
+
+    .sidebar .new-chat {
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.7vw 1vw;
+        background-color: #303134;
+        border-radius: 50px;
+        cursor: pointer;
+        color: #E8EAED;
+        gap: 2vw;
+    }
+
+    .sidebar .new-chat:hover {
+        background-color: #3C4043;
+        transform: scale(1.02);
+    }
+
+    .sidebar .new-chat img {
+        width: 1.1vw;
+        filter: brightness(0) invert(1);
+    }
+
+    .sidebar .new-chat p {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .sidebar .recent-title {
+        font-size: 12px;
+        font-weight: 600;
+        color: #9AA0A6;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+
+    .sidebar .recent-entry {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        background-color: transparent;
+        border-radius: 8px;
+        cursor: pointer;
+        color: #E8EAED;
+        transition: background-color 0.2s, transform 0.2s;
+    }
+
+    .sidebar .recent-entry:hover {
+        background-color: #3C4043;
+        transform: scale(1.02);
+    }
+
+    .sidebar .recent-entry img {
+        width: 20px;
+        filter: brightness(0) invert(1);
+    }
+
+    .sidebar .recent-entry p {
+        font-size: 14px;
+        font-weight: 400;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .sidebar .bottom {
+        margin-top: auto;
+        padding-top: 20px;
+        border-top: 1px solid #3C4043;
+    }
+
+    .sidebar .bottom-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        background-color: transparent;
+        border-radius: 8px;
+        cursor: pointer;
+        color: #E8EAED;
+        transition: background-color 0.2s, transform 0.2s;
+    }
+
+    .sidebar .bottom-item:hover {
+        background-color: #3C4043;
+        transform: scale(1.02);
+    }
+
+    .sidebar .bottom-item img {
+        width: 20px;
+        filter: brightness(0) invert(1);
+    }
+
+    .sidebar .bottom-item p {
+        font-size: 14px;
+        font-weight: 400;
+    }
